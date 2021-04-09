@@ -1,0 +1,682 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <link href="https://cdn.jsdelivr.net/npm/video.js@7.5.0/dist/video-js.min.css" rel="stylesheet" />
+    <!-- font awesome 5 free -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- Poppins font from Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Your Custom CSS File Which includes the blocks -->
+    <link rel="stylesheet" href="index.css">
+
+    <script>
+        /* Disable VideoJS tracking */
+        window.HELP_IMPROVE_VIDEOJS = false;
+    </script>
+
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/favicon/site.webmanifest">
+
+    <!-- Primary Meta Tags -->
+    <title>Cactus School: An Aspiring Online School of Digital Crafts</title>
+    <meta name="title" content="Cactus School: An Aspiring Online School of Digital Crafts">
+    <meta name="description"
+        content="Learn software development from a master with quality one-to-one training in an online school!">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://cactus.school/">
+    <meta property="og:title" content="Cactus School: An Aspiring Online School of Digital Crafts">
+    <meta property="og:description"
+        content="Learn software development from a master with quality one-to-one training in an online school!">
+    <meta property="og:image" content="https://cactus.school/img/meta-image.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://cactus.school/">
+    <meta property="twitter:title" content="Cactus School: An Aspiring Online School of Digital Crafts">
+    <meta property="twitter:description"
+        content="Learn software development from a master with quality one-to-one training in an online school!">
+    <meta property="twitter:image" content="https://cactus.school/img/meta-image.png">
+</head>
+
+<body>
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"></script>
+    <script src="https://cdn.jsdelivr.net/npm/video.js@7.5.0/dist/video.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/videojs-youtube/2.6.1/Youtube.min.js"
+        integrity="sha512-mF+XuiEvJq707N/B9Fm/fI2wgMcWuFLsoztIp0UzEKgHCZgczbYpO2+Vq2TEi0LmE4crVj2r8AYru7X5QjVotw=="
+        crossorigin="anonymous"></script>
+
+    <header class="hero container-fluid">
+        <nav class="hero-nav container px-sm-0 mx-auto">
+            <ul class="nav w-100 list-unstyled align-items-center p-0">
+                <li class="hero-nav__item"><img class="hero-nav__logo" src="img/logo.png" /></li>
+                <li id="hero-menu" class="flex-grow-1 hero__nav-list hero__nav-list--mobile-menu ft-menu">
+                    <ul
+                        class="hero__menu-content nav flex-column flex-lg-row ft-menu__slider animated list-unstyled p-2 p-lg-0">
+                        <li class="hero-nav__item"><a href="#features" class="hero-nav__link">Features</a></li>
+                        <li class="hero-nav__item"><a href="#pricing" class="hero-nav__link">Pricing</a></li>
+                        <li class="hero-nav__item"><a href="#FAQ" class="hero-nav__link">FAQ</a></li>
+                        <li class="hero-nav__item"><a href="#contact" class="hero-nav__link">Book a Call</a></li>
+                        <li class="hero-nav__item"><a href="#testimonials" class="hero-nav__link">Testimonials</a></li>
+                        <li class="hero-nav__item"><a href="#blog" class="hero-nav__link"">Blog</a></li>
+                    </ul><button onclick=" document.querySelector('#hero-menu').classList.toggle('ft-menu--js-show')"
+                                class="ft-menu__close-btn animated"><svg class="bi bi-x" width="1em" height="1em"
+                                    viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                        d="M11.854 4.146a.5.5 0 010 .708l-7 7a.5.5 0 01-.708-.708l7-7a.5.5 0 01.708 0z"
+                                        clip-rule="evenodd"></path>
+                                    <path fill-rule="evenodd"
+                                        d="M4.146 4.146a.5.5 0 000 .708l7 7a.5.5 0 00.708-.708l-7-7a.5.5 0 00-.708 0z"
+                                        clip-rule="evenodd"></path>
+                                </svg></button>
+                        </li>
+                        <li class="d-lg-none flex-grow-1 d-flex flex-row-reverse hero-nav__item"><button
+                                onclick="document.querySelector('#hero-menu').classList.toggle('ft-menu--js-show')"
+                                class="text-center px-2"><i class="fas fa-bars"></i></button></li>
+                    </ul>
+        </nav>
+        <div class="hero__content container mx-auto">
+            <div class="col-lg-5 px-0 mx-0 mr-5"> <video id="vid1" class="video-js vjs-default-skin" controls autoplay
+                    data-setup='{ "techOrder": ["youtube"], "sources": [{ "type": "video/youtube", "src": "https://www.youtube.com/watch?v=APkb4AILvNU"}] }'>
+                    <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web
+                        browser that<a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5
+                            video</a></p>
+                </video>
+            </div>
+            <div class="col-lg-7 px-0 mt-5 mt-lg-0">
+                <h1 class="hero__title mb-3">We train <span class="highlight">Android Developers</span> with
+                    superpowers.
+                </h1>
+                <p class="hero__paragraph mb-5">In Cactus School we train people to become successful
+                    software engineers following the master-apprentice model.</p>
+                <div class="hero__btns-container">
+                    <a class="hero__btn btn btn-primary mb-2 mb-lg-0"
+                        href="https://docs.google.com/forms/d/e/1FAIpQLScNijAyHW4pCPfigF-ttfU_3RKdLYRq5pKgMY_8nKHmv2iqWA/viewform?usp=sf_link"
+                        target="_blank">APPLY
+                        TO CACTUS SCHOOL</a>
+                    <a class="hero__btn btn ml-sm-3 btn-outline mb-2 mb-lg-0" href="#!"
+                        onclick="Calendly.initPopupWidget({url: 'https://calendly.com/safaorhan/cactus-school?text_color=0a1f44&primary_color=025955&background_color=ffffff'});return false;">LEARN
+                        MORE</a>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    <!-- Stats -->
+    <div class="block-35 space-between-blocks">
+        <div class="container">
+            <!-- HEADER -->
+            <ul class="stats row list-unstyled text-center p-0">
+                <li class="stats__li col-sm-6 col-lg-3 p-0"><span class="stats__number">1</span>
+                    <p class="stats__text">INSTRUCTOR</p>
+                </li>
+                <li class="stats__li col-sm-6 col-lg-3 p-0"><span class="stats__number">3</span>
+                    <p class="stats__text">ACTIVE APPRENTICES</p>
+                </li>
+                <li class="stats__li col-sm-6 col-lg-3 p-0"><span class="stats__number">20+</span>
+                    <p class="stats__text">TOTAL APPRENTICES</p>
+                </li>
+                <li class="stats__li col-sm-6 col-lg-3 p-0"><span class="stats__number">150+</span>
+                    <p class="stats__text">PERSONAL LESSONS</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Content -->
+    <div class="block-7 space-between-blocks">
+        <div class="container">
+            <!-- HEADER -->
+            <div class="col-lg-8 col-xl-7 mx-auto text-center mb-5">
+                <h1 class="block__title mb-3">How do we train<br />market-ready developers?</h1>
+                <p class="block__paragraph mb-0">We use project simulations, up-to-date learning materials and
+                    one-to-one mentorship to prepare you to the real world.</p>
+            </div>
+            <div class="row px-2 align-items-center flex-lg-row justify-content-center">
+                <!-- IMAGE -->
+                <div class="col-lg-5 my-5 text-center">
+                    <object data="img/Classroom-rafiki.svg" type="image/svg+xml"></object>
+                </div>
+                <!-- RIGHT CONTENT -->
+                <div class="col-lg-4">
+                    <div class="card-2 d-flex">
+                        <div><span class="card-2__symbol mx-auto"><i class="fas fa-tasks"></i></span></div>
+                        <div class="px-2"></div>
+                        <div>
+                            <h3 class="card-2__title mb-2">Project Simulations</h3>
+                            <p class="card-2__paragraph">We simulate a work environment where you need to work on real
+                                tasks, give status-updates, get your code reviewed and tested.</p>
+                        </div>
+                    </div>
+                    <div class="card-2 d-flex">
+                        <div><span class="card-2__symbol mx-auto"><i class="fas fa-people-arrows"></i></span></div>
+                        <div class="px-2"></div>
+                        <div>
+                            <h3 class="card-2__title mb-2">Personal Training</h3>
+                            <p class="card-2__paragraph">We teach you how to craft quality code and grow as a software
+                                engineer in personal sessions.</p>
+                        </div>
+                    </div>
+                    <div class="card-2 d-flex">
+                        <div><span class="card-2__symbol mx-auto"><i class="fas fa-code"></i></span></div>
+                        <div class="px-2"></div>
+                        <div>
+                            <h3 class="card-2__title mb-2">Hand-picked Materials</h3>
+                            <p class="card-2__paragraph">We curate the most up-to-date learning resources for you. When
+                                something is missing, we create one.</p>
+                        </div>
+                    </div>
+                    <div class="card-2 d-flex">
+                        <div><span class="card-2__symbol mx-auto"><i class="fas fa-calendar-alt"></i></span></div>
+                        <div class="px-2"></div>
+                        <div>
+                            <h3 class="card-2__title mb-2">Intensive Learning Programme</h3>
+                            <p class="card-2__paragraph">We take training serious with personal lessons, daily status
+                                updates, weekly career meetings, weekly 1:1 mentorship sessions and more!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!------------------------------>
+    <!-- Comment from Safa ---------------->
+    <!------------------------------>
+    <div class="block-22 space-between-blocks">
+        <div class="container">
+            <div class="testimonial-card-3 text-center"><svg class="testimonial-card-3__quote-svg" width="24"
+                    height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M19.9 10.537c1.147.22 2.095.727 2.844 1.52.75.75 1.124 1.83 1.124 3.24 0 1.543-.507 2.777-1.52 3.703-1.015.881-2.27 1.322-3.77 1.322-1.807 0-3.217-.639-4.23-1.917-1.015-1.278-1.522-2.931-1.522-4.959 0-3.041.948-5.487 2.843-7.339C17.565 4.257 20.342 3.22 24 3v2.182c-1.983.264-3.548.837-4.694 1.719-1.102.837-1.741 2.05-1.918 3.636h2.513zm-12.76 0c1.102.22 2.028.727 2.777 1.52.75.75 1.124 1.83 1.124 3.24 0 1.543-.507 2.777-1.52 3.703-1.014.881-2.27 1.322-3.769 1.322-1.807 0-3.218-.639-4.231-1.917C.507 17.127 0 15.474 0 13.446c0-3.041.948-5.487 2.843-7.339C4.783 4.257 7.581 3.22 11.24 3v2.182c-1.984.264-3.549.837-4.695 1.719-1.146.837-1.807 2.05-1.983 3.636H7.14z"
+                        fill="currentColor"></path>
+                </svg>
+                <p class="testimonial-card-3__paragraph mb-3 mt-4">Cactus School is born from the need of a quality
+                    software engineer training program that teaches the necessary skillset for the industry.</p>
+                <p class="block-22-person mt-4 mb-0"><img class="block-22-person__avatar"
+                        src="img/safa-gradient-square-small.png"><!-- Don't remove this --><span class="mx-2"></span>
+                    <!-- Don't remove this --><a href="https://safaorhan.com" class="block-22-person__link">Safa
+                        Orhan</a><span>, Founder of </span><a href="#!" class="block-22-person__link">Cactus School</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Online Classroom Features -->
+    <div id="features" class="block-3 container space-between-blocks">
+        <div class="row align-items-center">
+            <div class="col-lg-3">
+                <div class="card-3 text-center"><span class="card-3__symbol mx-auto mb-4"><i
+                            class="fas fa-tasks"></i></span>
+                    <h3 class="card-3__title mb-2">Project Simulations</h3>
+                    <p class="card-3__paragraph">You will have to work on real-world grade projects, complete your tasks
+                        in time, get your code reviewed and tested.</p>
+                </div>
+                <div class="card-3 text-center"><span class="card-3__symbol mx-auto mb-4"><i
+                            class="fas fa-briefcase"></i></span>
+                    <h3 class="card-3__title mb-2">Career Coaching</h3>
+                    <p class="card-3__paragraph">You'll be covered when it comes to you finding a job. From writing a
+                        compelling CV to studying for technical and behavioral interviews, we'll teach you how to ace in
+                        your career.</p>
+                </div>
+            </div>
+            <div class="col-lg-5 mx-auto">
+                <div class="col-lg-7 px-0 pb-5 mx-auto">
+                    <div class="card-3 text-center"><span class="card-3__symbol mx-auto mb-4"><i
+                                class="fas fa-users"></i></span>
+                        <h3 class="card-3__title mb-2">Learn with others</h3>
+                        <p class="card-3__paragraph">Be a part of a classroom where you learn together. You learn from
+                            the
+                            lectures and from each other. Being a part of a classroom will keep you motivated and on
+                            track.</p>
+                    </div>
+                </div>
+                <div class="col-lg-11 px-0 my-5 mx-auto text-center">
+                    <p class="block__pre-title mb-2">WE TAKE TRAINING SERIOUSLY</p>
+                    <h1 class="block__title mb-3">Cactus School makes you learn.</h1>
+                    <p class="block__paragraph mb-5">We know that software training cannot be done by a couple of hours
+                        of watching videos. We take this seriously and use an overwhelming set of tools to make your
+                        learn.</p>
+                </div>
+                <div class="col-lg-7 px-0 pt-5 mx-auto">
+                    <div class="card-3 text-center"><span class="card-3__symbol mx-auto mb-4"><i
+                                class="fab fa-slack"></i></span>
+                        <h3 class="card-3__title mb-2">Slack Workspace</h3>
+                        <p class="card-3__paragraph">You can reach your instructor anytime via Slack where complementary
+                            materials,
+                            inspirational readings, and extra lectures are posted constantly. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="card-3 text-center"><span class="card-3__symbol mx-auto mb-4"><i
+                            class="fas fa-people-arrows"></i></span>
+                    <h3 class="card-3__title mb-2">8 Private lessons</h3>
+                    <p class="card-3__paragraph">You will get trained by your instructor personally in 8 one-to-one
+                        lectures per month.</p>
+                </div>
+                <div class="card-3 text-center"><span class="card-3__symbol mx-auto mb-4"><i
+                            class="fas fa-video"></i></span>
+                    <h3 class="card-3__title mb-2">4 Weekly Check-ins</h3>
+                    <p class="card-3__paragraph">Your instructor will personally have additional 1:1 meetings with you
+                        to check
+                        if you are on track. You will have a mentor watching you closely.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!------------------------------>
+    <!--Pricing     ---------------->
+    <!------------------------------>
+    <div id="pricing" class="block-17 px-4 space-between-blocks">
+        <div class="container">
+            <div class="block__header col-lg-8 col-xl-7 mx-auto text-center">
+                <h1 class="block__title mb-3">One of the best investments for <span class="highlight">your
+                        career</span>.</h1>
+                <p class="block__paragraph mb-0">The <a style="color: var(--text-primary); text-decoration: underline;"
+                        href="https://www.glassdoor.com/Salaries/android-developer-salary-SRCH_KO0,17.htm"
+                        target="_blank">worldwide average Android Developer salary</a> is <b>$95,847 / year</b>. That's
+                    <b>40x</b>
+                    more of what you pay Cactus School in a year!
+                </p>
+            </div>
+            <div
+                class="block-17__card row col-xl-11 p-0 mx-auto flex-column-reverse flex-lg-row justify-content-center">
+                <div
+                    class="block-17-testimonial text-center col-lg-6 px-0 d-flex align-items-center justify-content-center">
+                    <div class="px-4 px-lg-5"><img class="block-17-person__avatar"
+                            src="https://platform.frontendor.com/assets/blocks/dist/images/profile-2.png">
+                        <p class="block-17-testimonial__paragraph my-4">I like how Frontendor takes care of the
+                            landing/product page, so startups can focus on their core offering without worrying about
+                            the UX of their landing page. That's appreciated!</p>
+                        <div class="flex-grow-1 d-flex flex-column mb-3"><span class="block-17-person__name">John
+                                Doe</span><span class="block-17-person__info my-1"></span></div>
+                    </div>
+                </div>
+                <div class="cta-card col-lg-6 px-0">
+                    <div class="plan-card text-center">
+                        <h6 class="plan-card__name mb-0">Full Package</h6>
+                        <p class="plan-card__price my-2">1499 TL</p><span class="plan-card__duration">per month*</span>
+                        <ul class="plan-features list-unstyled mt-5 mb-0">
+                            <li class="plan-features__li"><span class="plan-features__li-icon mx-1"><svg
+                                        class="bi bi-check2-circle" width="1em" height="1em" viewBox="0 0 16 16"
+                                        fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd"
+                                            d="M15.354 2.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L8 9.293l6.646-6.647a.5.5 0 0 1 .708 0z">
+                                        </path>
+                                        <path fill-rule="evenodd"
+                                            d="M8 2.5A5.5 5.5 0 1 0 13.5 8a.5.5 0 0 1 1 0 6.5 6.5 0 1 1-3.25-5.63.5.5 0 1 1-.5.865A5.472 5.472 0 0 0 8 2.5z">
+                                        </path>
+                                    </svg></span><span class="mx-3">Monthly 8 personal lessons</span></li>
+                            <li class="plan-features__li"><span class="plan-features__li-icon mx-1"><svg
+                                        class="bi bi-check2-circle" width="1em" height="1em" viewBox="0 0 16 16"
+                                        fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd"
+                                            d="M15.354 2.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L8 9.293l6.646-6.647a.5.5 0 0 1 .708 0z">
+                                        </path>
+                                        <path fill-rule="evenodd"
+                                            d="M8 2.5A5.5 5.5 0 1 0 13.5 8a.5.5 0 0 1 1 0 6.5 6.5 0 1 1-3.25-5.63.5.5 0 1 1-.5.865A5.472 5.472 0 0 0 8 2.5z">
+                                        </path>
+                                    </svg></span><span class="mx-3">Weekly 1:1 meetings</span></li>
+                            <li class="plan-features__li"><span class="plan-features__li-icon mx-1"><svg
+                                        class="bi bi-check2-circle" width="1em" height="1em" viewBox="0 0 16 16"
+                                        fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd"
+                                            d="M15.354 2.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L8 9.293l6.646-6.647a.5.5 0 0 1 .708 0z">
+                                        </path>
+                                        <path fill-rule="evenodd"
+                                            d="M8 2.5A5.5 5.5 0 1 0 13.5 8a.5.5 0 0 1 1 0 6.5 6.5 0 1 1-3.25-5.63.5.5 0 1 1-.5.865A5.472 5.472 0 0 0 8 2.5z">
+                                        </path>
+                                    </svg></span><span class="mx-3">Weekly career meetings</span></li>
+                            <li class="plan-features__li"><span class="plan-features__li-icon mx-1"><svg
+                                        class="bi bi-check2-circle" width="1em" height="1em" viewBox="0 0 16 16"
+                                        fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd"
+                                            d="M15.354 2.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L8 9.293l6.646-6.647a.5.5 0 0 1 .708 0z">
+                                        </path>
+                                        <path fill-rule="evenodd"
+                                            d="M8 2.5A5.5 5.5 0 1 0 13.5 8a.5.5 0 0 1 1 0 6.5 6.5 0 1 1-3.25-5.63.5.5 0 1 1-.5.865A5.472 5.472 0 0 0 8 2.5z">
+                                        </path>
+                                    </svg></span><span class="mx-3">Daily status-updates</span></li>
+                            <li class="plan-features__li"><span class="plan-features__li-icon mx-1"><svg
+                                        class="bi bi-check2-circle" width="1em" height="1em" viewBox="0 0 16 16"
+                                        fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd"
+                                            d="M15.354 2.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L8 9.293l6.646-6.647a.5.5 0 0 1 .708 0z">
+                                        </path>
+                                        <path fill-rule="evenodd"
+                                            d="M8 2.5A5.5 5.5 0 1 0 13.5 8a.5.5 0 0 1 1 0 6.5 6.5 0 1 1-3.25-5.63.5.5 0 1 1-.5.865A5.472 5.472 0 0 0 8 2.5z">
+                                        </path>
+                                    </svg></span><span class="mx-3">Access instructors via Slack</span></li>
+                            <li class="mt-5"><a
+                                    href="https://docs.google.com/forms/d/e/1FAIpQLScNijAyHW4pCPfigF-ttfU_3RKdLYRq5pKgMY_8nKHmv2iqWA/viewform?usp=sf_link"
+                                    class="d-block btn btn-primary px-5 mx-auto">APPLY
+                                    NOW</a><small class="d-block mt-3 text-center">*KDV is included for Turkish
+                                    residents.</small></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- FAQ -->
+    <div id="FAQ" class="block-40 space-between-blocks">
+        <div class="container">
+            <!-- HEADER -->
+            <div class="col-lg-8 col-xl-7 mx-auto text-center mb-5">
+                <h1 class="block__title">Frequently Asked Questions</h1>
+            </div>
+            <div class="row px-2 justify-content-center">
+                <div class="col-lg-8">
+                    <div class="content-block">
+                        <h4 class="content-block__title">Who is the instructor?</h4>
+                        <p class="content-block__paragraph"><a href="https://safaorhan.com"
+                                style="text-decoration: underline; color: var(--primary);">Safa Orhan</a> is
+                            the founder and lead instructor of Cactus School. Safa has more than 10 years
+                            experience in
+                            building quality software. He worked in several startups, corporates and businesses
+                            including those he co-founded, taught Android to dozens of students in international
+                            conferences, bootcamps, events,
+                            workshops and online classrooms.</p>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="content-block">
+                        <h4 class="content-block__title">How long is this program?</h4>
+                        <p class="content-block__paragraph">In Cactus School we accept apprentices from different levels
+                            of knowledge and different backgrounds. Everybody has a special journey and a personal pace.
+                            So you stay until you become the software engineer you want. You stay until you can create
+                            apps for the market. You stay until you land in your dream job. <b>It's up to you.</b></p>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="content-block">
+                        <h4 class="content-block__title">I'm not a programmer. How much time does it get for me to
+                            become an Android Developer?</h4>
+                        <p class="content-block__paragraph">Statistically speaking it can take 6-12 months of training
+                            for you to get your first job. How much time and effort you put into Cactus School will
+                            affect dramatically how fast you get results. As we said, <b>it's up to you.</b>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="content-block">
+                        <h4 class="content-block__title">I'm already a programmer. Will I benefit from Cactus School?
+                        </h4>
+                        <p class="content-block__paragraph"><b>Heck a lot!</b> You will learn advanced topics of how
+                            to architect Android apps, which libraries / frameworks to know by heart, how to create a
+                            testable and sustainable codebase and a lot more. There are always room for growth as a
+                            software engineer.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="content-block">
+                        <h4 class="content-block__title">Who can apply?</h4>
+                        <p class="content-block__paragraph">Anybody who has the following conditions can apply to become
+                            an apprentice:
+                            <br />&nbsp;&nbsp;&nbsp;&nbsp;- Speaks English. (Materials will be in English and you'll
+                            need to read and write in English)
+                            <br />&nbsp;&nbsp;&nbsp;&nbsp;- Can commit at least 15 hours per week.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="content-block">
+                        <h4 class="content-block__title">How do I pay?</h4>
+                        <p class="content-block__paragraph">Currently we only accept <b>bank transfers</b>. Payment
+                            details will be provided after you apply.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CTA -->
+    <div id="contact" class="block-32 space-between-blocks">
+        <div class="container">
+            <!-- HEADER -->
+            <div class="col-lg-8 col-xl-7 mx-auto text-center mb-5">
+                <h1 class="block__title mb-3">Still have questions?</h1>
+                <p class="block__paragraph mb-0">Let's quickly hop on a Google Meet and discuss your questions and
+                    concerns. You can book a call with us for free and ask whatever you like!</p>
+            </div>
+            <div class="text-center"><a href="#!"
+                    onclick="Calendly.initPopupWidget({url: 'https://calendly.com/safaorhan/cactus-school?text_color=0a1f44&primary_color=025955&background_color=ffffff'});return false;"
+                    class="btn btn-invert">BOOK A CALL</a></div>
+        </div>
+    </div>
+
+    <!------------------------------>
+    <!--Testimonials---------------->
+    <!------------------------------>
+    <div id="testimonials" class="block-20 space-between-blocks">
+        <div class="container">
+            <div class="col-lg-8 col-xl-7 mx-auto text-center px-0 mb-5">
+                <p class="block__paragraph">We asked apprentices:</p>
+                <h1 class="block__title pb-5">What is Cactus School for you?</h1>
+            </div>
+            <div class="row px-2 pt-4">
+                <div class="col-lg-4">
+                    <div class="testimonial-card-1">
+                        <div class="block-20-person">
+                            <div class="mb-2"><img class="block-20-person__avatar"
+                                    src="https://uifaces.co/our-content/donated/IPh6PTBx.jpg"></div>
+                            <div class="flex-grow-1 d-flex flex-column"><span class="block-20-person__name my-1">Cem
+                                    Demir</span><span class="block-20-person__info"><a
+                                        href="https://twitter.com/AndroidDev_C"
+                                        style="color: var(--primary);">@AndroidDev_C</a></span></div>
+                        </div>
+                        <p class="testimonial-card-1__paragraph mb-3">Cactus School is a place where dreams come true.
+                            As a physicist, being a developer has always been in me.
+                            A unique institution with its interest and relevance to students.
+                            Achieving your goal is easy with the support of Cactus School.</p><span
+                            class="testimonial-card-1__quote-symbol"><i class="fas fa-quote-left"></i></span>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="testimonial-card-1">
+                        <div class="block-20-person">
+                            <div class="mb-2"><img class="block-20-person__avatar" src="img/Muammer Akca.png"></div>
+                            <div class="flex-grow-1 d-flex flex-column"><span class="block-20-person__name my-1">Muammer
+                                    Akca</span><span class="block-20-person__info"><a
+                                        href="https://twitter.com/AkcaMuammer"
+                                        style="color: var(--primary);">@AkcaMuammer</a></span></div>
+                        </div>
+                        <p class="testimonial-card-1__paragraph mb-3">After a year of self-learning, I realized I was
+                            not growing. It was like stumbling in the sea without a clear target. Now that I found
+                            Cactus School and my mentor Safa, I am in good hands and growing steadily. Cactus School is
+                            one of the best places to learn Android Development.</p><span
+                            class="testimonial-card-1__quote-symbol"><i class="fas fa-quote-left"></i></span>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="testimonial-card-1">
+                        <div class="block-20-person">
+                            <div class="mb-2"><img class="block-20-person__avatar" src="img/Cem Fındıklı.png"></div>
+                            <div class="flex-grow-1 d-flex flex-column"><span class="block-20-person__name my-1">Cem
+                                    Fındıklı</span><span class="block-20-person__info"><a
+                                        href="https://twitter.com/cmfndkl"
+                                        style="color: var(--primary);">@cmfndkl</a></span></div>
+                        </div>
+                        <p class="testimonial-card-1__paragraph mb-3">Cactus School guides me in experiencing the
+                            software lifecycle. Because I am trained personally, I improve my software engineering
+                            skills really fast. My training in Cactus School has been really helpful for me to become a
+                            qualified developer.</p><span class="testimonial-card-1__quote-symbol"><i
+                                class="fas fa-quote-left"></i></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------------------------------>
+    <!--BLOG---------------->
+    <!------------------------------>
+    <div id="blog" class="block-46 space-between-blocks">
+        <div class="container">
+            <!-- HEADER -->
+            <div class="block__header col-lg-8 col-xl-7 mx-auto text-center">
+                <h1 class="block__title">Latest from our blog</h1>
+            </div>
+            <div class="row px-2 justify-content-center position-relative">
+                <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
+                    <a class="post__wrapper"
+                        href="https://blog.cactus.school/last-100-days-of-2020-i-decided-to-become-a-programmer-here-is-what-happened-dbed8b210f4b"
+                        target="_blank">
+                        <div class="post">
+                            <div class="post__img-container pb-1"><img
+                                    src="https://miro.medium.com/max/1200/0*47eUaoMH39R9YKhZ" class="post__img"></div>
+                            <div class="post__content px-4 mt-4">
+                                <p class="post__info"><span class="post__author">Mehmet Yavuz Yağış</span><span
+                                        class="post__time">9 min read</span></p>
+                                <h3 class="post__title mt-2 mb-3">Last 100 Days of 2020, I Decided to Become A
+                                    Programmer:
+                                    Here is What Happened</h3><a
+                                    href="https://blog.cactus.school/last-100-days-of-2020-i-decided-to-become-a-programmer-here-is-what-happened-dbed8b210f4b"
+                                    target="_blank" class="post__link"><span>Read Article</span><svg
+                                        class="post__link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                                        fill="currentColor">
+                                        <path fill-rule="evenodd"
+                                            d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                                            clip-rule="evenodd"></path>
+                                    </svg></a>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
+                    <a class="post__wrapper" href="https://blog.cactus.school/aaaalright-this-is-cs50-ad33a723236c"
+                        target="_blank">
+                        <div class="post">
+                            <div class="post__img-container pb-1"><img
+                                    src="https://miro.medium.com/max/1000/1*1xDeFhGFsROnt3lmVpcNgQ.jpeg"
+                                    class="post__img"></div>
+                            <div class="post__content px-4 mt-4">
+                                <p class="post__info"><span class="post__author">Mehmet Yavuz Yağış</span><span
+                                        class="post__time">5 min read</span></p>
+                                <h3 class="post__title mt-2 mb-3">AAAALRIGHT, THIS IS CS50!</h3><a
+                                    href="https://blog.cactus.school/aaaalright-this-is-cs50-ad33a723236c"
+                                    class="post__link"><span>Read Article</span><svg class="post__link-arrow"
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                        <path fill-rule="evenodd"
+                                            d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                                            clip-rule="evenodd"></path>
+                                    </svg></a>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
+                    <a class="post__wrapper"
+                        href="https://blog.cactus.school/my-mistakes-when-i-started-programming-which-most-probably-many-others-can-relate-to-6bc9cd94b565"
+                        target="_blank">
+                        <div class="post">
+                            <div class="post__img-container pb-1"><img
+                                    src="https://miro.medium.com/max/1200/1*rMC70ZFk4gbk5WAQ3JpBJQ.jpeg"
+                                    class="post__img"></div>
+                            <div class="post__content px-4 mt-4">
+                                <p class="post__info"><span class="post__author">Mehmet Yavuz Yağış</span><span
+                                        class="post__time">6 min read</span></p>
+                                <h3 class="post__title mt-2 mb-3">Are you a coding newbie? Let’s have a talk.</h3><a
+                                    href="https://blog.cactus.school/my-mistakes-when-i-started-programming-which-most-probably-many-others-can-relate-to-6bc9cd94b565"
+                                    class="post__link"><span>Read Article</span><svg class="post__link-arrow"
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                        <path fill-rule="evenodd"
+                                            d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                                            clip-rule="evenodd"></path>
+                                    </svg></a>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="block-46__svg-dots d-none d-lg-block"><svg class="block-46__dots-svg--left"
+                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <defs>
+                            <pattern id="pattern" width="19" height="19" viewBox="0 0 40 40"
+                                patternUnits="userSpaceOnUse" patternTransform="rotate(90)">
+                                <rect id="pattern-background" x="0" y="0" width="400%" height="400%" fill="transparent">
+                                </rect>
+                                <circle cx="20" cy="20" r="5" fill="currentColor" stroke="currentColor"
+                                    stroke-width="0"></circle>
+                                <circle cx="20" cy="20" r="0" fill="currentColor" stroke="currentColor"
+                                    stroke-width="0"></circle>
+                            </pattern>
+                        </defs>
+                        <rect fill="url(#pattern)" height="100%" width="100%" y="0" x="0"></rect>
+                    </svg><svg class="block-46__dots-svg--right" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <defs>
+                            <pattern id="pattern" width="19" height="19" viewBox="0 0 40 40"
+                                patternUnits="userSpaceOnUse" patternTransform="rotate(90)">
+                                <rect id="pattern-background" x="0" y="0" width="400%" height="400%" fill="transparent">
+                                </rect>
+                                <circle cx="20" cy="20" r="5" fill="currentColor" stroke="currentColor"
+                                    stroke-width="0"></circle>
+                                <circle cx="20" cy="20" r="0" fill="currentColor" stroke="currentColor"
+                                    stroke-width="0"></circle>
+                            </pattern>
+                        </defs>
+                        <rect fill="url(#pattern)" height="100%" width="100%" y="0" x="0"></rect>
+                    </svg></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="block-43 text-center py-5">
+        <div class="container">
+            <ul class="d-flex justify-content-center list-unstyled p-0">
+                <li class="mx-2"><a href="https://twitter.com/cactus_school" class="block-43__link m-0"><i
+                            class="fab fa-twitter"></i></a></li>
+                <li class="mx-2"><a href="https://www.instagram.com/cactus_school/" class="block-43__link m-0"><i
+                            class="fab fa-instagram"></i></a></li>
+                <li class="mx-2"><a href="mailto:hi@cactus.school" class="block-43__link m-0"><i
+                            class="fas fa-envelope"></i></a></li>
+            </ul>
+            <p class="block-43__copyrights">Made with love by <a href="http://safaorhan.com" target="_blank">Safa
+                    Orhan</a>.</p>
+            <a href="https://stories.freepik.com/education">Illustration by Freepik Stories</a>
+        </div>
+    </div>
+
+    <script>
+        function closeMenuAndGoTo(query) {
+            document.querySelector('#hero-menu').classList.toggle('ft-menu--js-show')
+            setTimeout(() => {
+                const element = document.querySelector(query)
+                window.scrollTo({
+                    top: element.getBoundingClientRect().top,
+                    behavior: 'smooth'
+                })
+            }, 250);
+        }
+
+        document.querySelector('#hero-menu').
+            querySelectorAll('[href]').
+            forEach(function (link) {
+                link.onclick = function (event) {
+                    event.preventDefault()
+                    closeMenuAndGoTo(link.getAttribute('href'))
+                }
+            })
+    </script>
+</body>
+
+</html>
