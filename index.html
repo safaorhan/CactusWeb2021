@@ -308,17 +308,17 @@
                 class="block-17__card row col-xl-11 p-0 mx-auto flex-column-reverse flex-lg-row justify-content-center">
                 <div
                     class="block-17-testimonial text-center col-lg-6 px-0 d-flex align-items-center justify-content-center">
-                    <div class="px-4 px-lg-5"><img class="block-17-person__avatar"
-                            src="img/muammer2.png">
+                    <div class="px-4 px-lg-5"><img class="block-17-person__avatar" src="img/muammer2.png">
                         <p class="block-17-testimonial__paragraph my-4">I am in good hands and growing steadily. Cactus
                             School is one of the best places to learn Android Development.</p>
-                        <div class="flex-grow-1 d-flex flex-column mb-3"><span class="block-17-person__name">Muammer Akca</span><span class="block-17-person__info my-1"></span></div>
+                        <div class="flex-grow-1 d-flex flex-column mb-3"><span class="block-17-person__name">Muammer
+                                Akca</span><span class="block-17-person__info my-1"></span></div>
                     </div>
                 </div>
                 <div class="cta-card col-lg-6 px-0">
                     <div class="plan-card text-center">
                         <h6 class="plan-card__name mb-0">Full Package</h6>
-                        <p class="plan-card__price my-2">1499 TL</p><span class="plan-card__duration">per month*</span>
+                        <p class="plan-card__price my-2">299 USD</p><span class="plan-card__duration">per month*</span>
                         <ul class="plan-features list-unstyled mt-5 mb-0">
                             <li class="plan-features__li"><span class="plan-features__li-icon mx-1"><svg
                                         class="bi bi-check2-circle" width="1em" height="1em" viewBox="0 0 16 16"
@@ -484,8 +484,7 @@
                 <div class="col-lg-4">
                     <div class="testimonial-card-1">
                         <div class="block-20-person">
-                            <div class="mb-2"><img class="block-20-person__avatar"
-                                    src="https://uifaces.co/our-content/donated/IPh6PTBx.jpg"></div>
+                            <div class="mb-2"><img class="block-20-person__avatar" src="img/Cem Demir.png"></div>
                             <div class="flex-grow-1 d-flex flex-column"><span class="block-20-person__name my-1">Cem
                                     Demir</span><span class="block-20-person__info"><a
                                         href="https://twitter.com/AndroidDev_C"
@@ -685,6 +684,31 @@
                     closeMenuAndGoTo(link.getAttribute('href'))
                 }
             })
+    </script>
+
+    <script>
+
+        ipLookUp()
+
+        function ipLookUp() {
+            fetch('https://ipapi.co/json/')
+                .then(response => response.json())
+                .then(data => data.country_code)
+                .then(country => {
+                    console.log("country: " + country)
+                    if(country == "TR") {
+                        setPrice("1499 TL")
+                    } else {
+                        setPrice("299 USD")
+                    }
+                });
+        }
+
+        function setPrice(price) {
+            console.log("setting price: " + price)
+            document.getElementsByClassName("plan-card__price my-2")[0].innerHTML = price;
+        }
+
     </script>
 </body>
 
