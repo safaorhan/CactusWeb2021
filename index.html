@@ -695,7 +695,6 @@
                 .then(response => response.json())
                 .then(data => data.country_code)
                 .then(country => {
-                    console.log("country: " + country)
                     if(country == "TR") {
                         setPrice("1499 TL")
                     } else {
@@ -705,7 +704,6 @@
         }
 
         function setPrice(price) {
-            console.log("setting price: " + price)
             document.getElementsByClassName("plan-card__price my-2")[0].innerHTML = price;
         }
 
