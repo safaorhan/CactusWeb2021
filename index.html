@@ -300,7 +300,7 @@
                 <p class="block__paragraph mb-0">The <a style="color: var(--text-primary); text-decoration: underline;"
                         href="https://www.glassdoor.com/Salaries/android-developer-salary-SRCH_KO0,17.htm"
                         target="_blank">worldwide average Android Developer salary</a> is <b>$95,847 / year</b>. That's
-                    <b>40x</b>
+                    <b id="salary-factor">26x</b>
                     more of what you pay Cactus School in a year!
                 </p>
             </div>
@@ -696,15 +696,16 @@
                 .then(data => data.country_code)
                 .then(country => {
                     if(country == "TR") {
-                        setPrice("1499 TL")
+                        setPrice("1499 TL", "40x")
                     } else {
-                        setPrice("299 USD")
+                        setPrice("299 USD", "26x")
                     }
                 });
         }
 
-        function setPrice(price) {
+        function setPrice(price, factor) {
             document.getElementsByClassName("plan-card__price my-2")[0].innerHTML = price;
+            document.getElementById("salary-factor").innerText = factor
         }
 
     </script>
